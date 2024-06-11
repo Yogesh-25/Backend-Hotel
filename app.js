@@ -23,7 +23,10 @@ const port = 5000;
 // });
 
 const mongoURI = 'mongodb+srv://hoteldata:hoteldata@cluster0.m3napu1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
-mongoose.connect(mongoURI)
+mongoose.connect(mongoURI,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
     .then(() => {
         console.log("Connected to MongoDB...");
     })
