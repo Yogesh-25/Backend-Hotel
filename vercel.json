@@ -1,6 +1,12 @@
 {
    "version": 2,
-   "name": "music-album",
+   "functions": {
+    "api/*": {
+      "runtime": "nodejs18.x",
+      "memory": 1024,
+      "maxDuration": 30  // Increase this value as needed
+    },
+   }
    "builds": [
       { "src": "./app.js", "use": "@vercel/node" }
    ],
