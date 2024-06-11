@@ -24,7 +24,6 @@ const port = 5000;
 
 const mongoURI = 'mongodb+srv://hoteldata:hoteldata@cluster0.m3napu1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(mongoURI,{
-    useNewUrlParser: true,
     serverSelectionTimeoutMS: 5000 ,
     useUnifiedTopology: true
 })
