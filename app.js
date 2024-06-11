@@ -22,7 +22,9 @@ const port = 5000;
 //     console.log("MongoDB error", err);
 // });
 
-const mongoURI = 'mongodb+srv://abcyog:abcyog%4025@hoteldata.umm38np.mongodb.net/?retryWrites=true&w=majority&appName=HotelData';
+
+
+const mongoURI = 'mongodb+srv://hoteldata:hoteldata@cluster0.m3napu1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
